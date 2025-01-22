@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+
+    commands:
+      - npm cache clean --force
+      - npm install --legacy-peer-deps
+
+  build:
+    commands:
+      - npm run build
+      - echo Build completed successfully pear
+
+artifacts:
+  files:
+    - "**/*"
