@@ -13,6 +13,7 @@ phases:
     commands:
       - npm run build
       - echo Build completed successfully pear
+      - cat /path/to/build/logs
 
 artifacts:
   files:
